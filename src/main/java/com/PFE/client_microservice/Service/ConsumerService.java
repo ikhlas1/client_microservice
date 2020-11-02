@@ -9,8 +9,9 @@ import org.springframework.stereotype.Service;
 public class ConsumerService {
     @Autowired TimeStampService timeStampService;
 
-    @RabbitListener( queues = "${rabbitmq.queue.name}")
+    @RabbitListener( queues = "${rabbitmq.queue.timestamp}")
     public void consumeMessage(TimeStamp timeStamp) {
+
         timeStampService.insertTimeStamp(timeStamp);
     }
 }

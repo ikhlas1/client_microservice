@@ -17,6 +17,7 @@ public class TimeStampService {
     }
 
     public void insertTimeStamp(TimeStamp timeStamp) {
+
         clientRepository.insert(timeStamp);
     }
 }
