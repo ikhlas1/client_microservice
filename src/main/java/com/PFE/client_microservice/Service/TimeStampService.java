@@ -20,4 +20,9 @@ public class TimeStampService {
 
         clientRepository.insert(timeStamp);
     }
+
+    public TimeStamp findByStampId(String stampId) {
+
+        return clientRepository.findByStampId(stampId);
+    }
 }
