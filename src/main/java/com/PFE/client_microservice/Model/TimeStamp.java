@@ -21,9 +21,7 @@ public class TimeStamp {
     private String stampId;
     private String queueId;
     private String serviceId;
-    private Client client; //the client's number in the queue
-    //private LocalDateTime timeStamp; // Need to change this or search for
-    // Cannot construct instance of `java.time.LocalDateTime` (no Creators, like default constructor, exist)
+    private Client client;
     private int year;
     private int month;
     private int dayOfMonth;
@@ -31,5 +29,5 @@ public class TimeStamp {
     private int minute;
     private int second;
     private int nano;
-    private String operationType; // add, delete, late, your turn.
+    private String operationType; // add, delete, late, turn.
 }

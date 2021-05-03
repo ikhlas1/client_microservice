@@ -27,7 +27,7 @@ public class ExchangeBindingsConfig {
     @Bean
     org.springframework.amqp.core.Queue timeStampQueue() {
 
-        return new org.springframework.amqp.core.Queue(Objects.requireNonNull(env.getProperty("rabbitmq.queue.timestamp")), false);
+        return new org.springframework.amqp.core.Queue(Objects.requireNonNull(env.getProperty("rabbitmq.queue.timestamp")), true);
     }
 
     //Bindings

@@ -23,8 +23,5 @@ public class TimeStampController {
     public TimeStamp findByStampId(@RequestParam(name = "stampId")String stampId){
         return  timeStampService.findByStampId(stampId);
     }
-    /*@PostMapping ("/postTimeStamp")
-    public TimeStamp postTimeStamp(){
-        return timeStampService.postTimeStamp()
-    }*/
+
 }
